@@ -1,6 +1,6 @@
 # 📁 README.md
 
-##<p align="center">
+<p align="center">
   <img src="logo.png" alt="Logo do Projeto" width="300"/>
 </p>
 
@@ -105,6 +105,20 @@ Com baixo custo e alta interatividade, permite que crianças, jovens e adultos a
 - Pontos da mão desenhados com cores vibrantes
 
 ---
+
+## Resultados
+<p align="center">
+  <img src="contarDedos.png" alt="Salvar dados - resultado" width="300"/>
+</p>
+<p align="center">
+  <img src="treinarIA.png" alt="Resultado do treinamento" width="300"/>
+</p>
+<p align="center">
+  <img src="telaInicial.png" alt="Página inicial da aplicação" width="300"/>
+</p>
+<p align="center">
+  <img src="teste.png" alt="Letra A - Teste" width="300"/>
+</p>
 
 ## ✨ Melhorias Futuras
 
