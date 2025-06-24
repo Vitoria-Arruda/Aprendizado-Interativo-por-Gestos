@@ -111,17 +111,17 @@ Com baixo custo e alta interatividade, permite que crianças, jovens e adultos a
 - Adicionar reconhecimento de palavras completas
 - Treinamento com mais vídeos e mais usuários
 - Suporte a múltiplas mãos
-- Implementação em versão mobile com Kivy ou Flutter
+- Implementação em versão mobile
 
 ---
 
 ## 👤 Autoria
-Desenvolvido por [Seu Nome], 2025.
+Desenvolvido por Vitória Arruda Andrade, 2025.
 
 ---
 
-✅ **Status:** Funcional e testado.
+✅ Status: Funcional e testado.
 
-🧪 **Acurácia Atual:** Aproximadamente 81%
+🧪 Acurácia Atual: Aproximadamente 81%
 
-📁 **Licença:** Livre para fins educacionais
+📁 Licença: Livre para fins educacionais
