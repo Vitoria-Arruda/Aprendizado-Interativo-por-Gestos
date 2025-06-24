@@ -123,11 +123,11 @@ class App:
         resultado = hands.process(rgb_cam)
         if resultado.multi_hand_landmarks:
             for hand_landmarks in resultado.multi_hand_landmarks:
-                 mp_drawing.draw_landmarks(
+                mp_drawing.draw_landmarks(
                     frame_cam, hand_landmarks, mp_hands.HAND_CONNECTIONS,
-                    mp_drawing.DrawingSpec(color=(0, 255, 255), thickness=4, circle_radius=2),  # Pontos: amarelo neon
-                    mp_drawing.DrawingSpec(color=(255, 20, 147), thickness=3)                  # Linhas: rosa neon
-        )
+                    mp_drawing.DrawingSpec(color=(0, 255, 255), thickness=4, circle_radius=2),
+                    mp_drawing.DrawingSpec(color=(255, 20, 147), thickness=3)
+                )
 
         current_time = time.time()
         if current_time - self.last_inference_time >= self.inference_interval:
@@ -168,27 +168,36 @@ class App:
             self.video.release()
         self.root.destroy()
 
-# Tela Inicial
+
+# Tela Inicial com logo
 class TelaInicial:
     def __init__(self, root):
         self.root = root
         self.root.title("Bem-vindo!")
-        self.root.geometry("500x300")
+        self.root.geometry("500x500")
         self.root.configure(bg="#e6f7ff")
 
-        titulo = tk.Label(root, text="Aprendizado Interativo por Gestos", 
-                          font=("Comic Sans MS", 20, "bold"), 
+        titulo = tk.Label(root, text="Bem-Vindo",
+                          font=("Comic Sans MS", 20, "bold"),
                           fg="#007acc", bg="#e6f7ff", pady=20)
         titulo.pack()
 
+        # === LOGO ===
+        imagem_logo = Image.open("logo.png")
+        imagem_logo = imagem_logo.resize((200, 200))
+        self.logo_tk = ImageTk.PhotoImage(imagem_logo)
+        label_logo = tk.Label(root, image=self.logo_tk, bg="#e6f7ff")
+        label_logo.pack()
+
         iniciar = ttk.Button(root, text="Iniciar", command=self.abrir_app)
-        iniciar.pack(pady=50, ipadx=20, ipady=10)
+        iniciar.pack(pady=30, ipadx=20, ipady=10)
 
     def abrir_app(self):
         self.root.destroy()
         nova_janela = tk.Tk()
         App(nova_janela)
         nova_janela.mainloop()
+
 
 # Início da aplicação
 if __name__ == "__main__":
