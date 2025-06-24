@@ -114,7 +114,7 @@ Com baixo custo e alta interatividade, permite que crianças, jovens e adultos a
   <img src="treinarIA.png" alt="Resultado do treinamento" width="300"/>
 </p>
 <p align="center">
-  <img src="telaInicial.png" alt="Página inicial da aplicação" width="300"/>
+  <img src="teleInicial.png" alt="Página inicial da aplicação" width="300"/>
 </p>
 <p align="center">
   <img src="teste.png" alt="Letra A - Teste" width="300"/>
