@@ -182,7 +182,6 @@ class TelaInicial:
                           fg="#007acc", bg="#e6f7ff", pady=20)
         titulo.pack()
 
-        # === LOGO ===
         imagem_logo = Image.open("logo.png")
         imagem_logo = imagem_logo.resize((200, 200))
         self.logo_tk = ImageTk.PhotoImage(imagem_logo)
